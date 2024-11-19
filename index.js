@@ -1,8 +1,9 @@
+/* eslint-disable no-undef */
 const express = require("express");
 const cookieParser = require("cookie-parser");
 const path = require("path");
 const app = express();
-const db = require("./db/config/mongooseConfig");
+const db = require("./config/mongooseConfig");
 const routes = require("./src/routes/index");
 
 app.set("view engine", "ejs");
