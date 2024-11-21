@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 const express = require("express");
-const { adminController } = require("../controllers");
+const { adminController } = require("../../controllers");
 
 const adminRouter = express.Router();
 
