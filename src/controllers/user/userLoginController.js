@@ -1,6 +1,6 @@
 const userModel = require("../../../db/models/userModel");
 const bcrypt = require("bcrypt");
-const jwt  = require("jsonwebtoken");
+const generateToken = require("../../../utils/generateToken");
 
 const userLoginController = async (req, res) => {
     const {email, password} = req.body;
@@ -19,7 +19,8 @@ const userLoginController = async (req, res) => {
         return;
     };
 
-    const token = jwt.sign({email, id: user._id}, "secretKey");
+    const token = generateToken(user);
+
     res.cookie("user", token, {
         httpOnly: true,
         secure: true 
