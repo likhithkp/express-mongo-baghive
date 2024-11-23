@@ -52,7 +52,7 @@ Before running the app, ensure you have the following installed:
 
 4. **Run the application**:
     ```bash
-    Copy code
+    yarn dev
 
 
 
