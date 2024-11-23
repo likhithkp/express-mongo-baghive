@@ -34,8 +34,8 @@ Before running the app, ensure you have the following installed:
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository_url>
-   cd <project_directory>
+    https://github.com/likhithkp/express-mongo-ecommerce
+    cd express-mongo-ecommerce
 
 2. **Install dependencies**:
     ```bash
