@@ -53,8 +53,3 @@ Before running the app, ensure you have the following installed:
 4. **Run the application**:
     ```bash
     yarn dev
-
-
-
-
-
