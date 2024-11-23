@@ -1,7 +1,11 @@
 const mongoose = require("mongoose");
 
 const productSchema = mongoose.Schema({
-    image: String,
+    image: {
+        // eslint-disable-next-line no-undef
+        type: Buffer,
+        required: true
+    },
     name: String,
     price: String,
     discount: {

@@ -11,7 +11,6 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, #FFD700, #FF8C00);
 }
 
 /* Container */
@@ -98,4 +97,125 @@ input:focus {
         border-right: none;
         border-bottom: 1px solid #ddd;
     }
+}
+
+/* General body styles */
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Plain white background */
+    color: #333;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    border-bottom: 1px solid #ddd; /* Light gray border to separate header */
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: #007bff; /* Blue color for links */
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.btn {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Products list */
+.products ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.products li {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.products li p {
+    margin: 5px 0;
+}
+
+/* Add Product form */
+.add-product-form {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.add-product-form .form-group {
+    margin-bottom: 15px;
+}
+
+.add-product-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.add-product-form input[type="text"],
+.add-product-form input[type="number"],
+.add-product-form input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-product-form input[type="text"],
+.add-product-form input[type="number"] {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    color: #333;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 1px solid #ddd; /* Light gray border on top */
 }

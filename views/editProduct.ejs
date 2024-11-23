@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="/styles/index.css">
+</head>
+<body>
+    <header>
+        <h1>Edit Product</h1>
+        <nav>
+            <a href="/admin/home">Back to Dashboard</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="add-product-form">
+            <form action="/admin/editProduct" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="image">Product Image:</label>
+                    <input type="file" name="image" id="image" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Product Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter product name" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="price">Price:</label>
+                    <input type="number" name="price" id="price" placeholder="Enter product price" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="discount">Discount:</label>
+                    <input type="number" name="discount" id="discount" placeholder="Enter discount percentage" />
+                </div>
+
+                <button type="submit" class="btn">Save</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
