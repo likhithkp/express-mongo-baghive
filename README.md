@@ -47,8 +47,8 @@ Before running the app, ensure you have the following installed:
 
     ```bash
     JWT_KEY = YOUR_KEY
-    EXPRESS_SESSION_SECRET = "YOUR_SECRET
-    NODE_ENV="development" || "prodcution" // Depending on deployment
+    EXPRESS_SESSION_SECRET = YOUR_SECRET
+    NODE_ENV="development" or "production" // Use "development" to access admin features
 
 4. **Run the application**:
     ```bash
