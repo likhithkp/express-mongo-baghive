@@ -1,14 +1,16 @@
 /* eslint-disable no-undef */
 const express = require("express");
 const app = express(); 
+
 const cookieParser = require("cookie-parser");
 const path = require("path");
 const flash = require("connect-flash");
 const expressSession = require("express-session");
-const db = require("./config/mongooseConfig");
-const routes = require("./src/routes/index");
 
 require("dotenv").config();
+
+const db = require("./config/mongooseConfig");
+const routes = require("./src/routes/index");
 
 app.set("view engine", "ejs");
 app.use(expressSession({

@@ -8,9 +8,6 @@ const productSchema = mongoose.Schema({
         type: Number,
         default: 0
     },
-    bgcolor: String,
-    panelcolor: String,
-    textcolor: String,
 })
 
 module.exports = mongoose.model("product", productSchema);

@@ -4,10 +4,7 @@ const adminSchema = mongoose.Schema({
     fullName: String,
     email: String,
     password: String,
-    products: {
-        type: Array,
-        default: []
-    },
+    products: [{ type: mongoose.Schema.Types.ObjectId, ref: "product" }],
     picture: Boolean,
     gstin: String
 }) 
