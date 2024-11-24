@@ -6,6 +6,8 @@ const adminLoginController = require("./admin/adminLoginController.js");
 const editProduct = require("./admin/editProduct.js");
 const editProductPage = require("./admin/editProductPage.js");
 const homeController = require("./home/homeController");
+const addToMyCartController = require("./user/addToMyCartController.js");
+const myCartController = require("./user/myCartController.js");
 const userController = require("./user/userController");
 const userLoginController = require("./user/userLoginController");
 const userLogoutController = require("./user/userLogoutController");
@@ -24,4 +26,6 @@ module.exports = {
     userLoginController,
     userProfileController,
     userLogoutController,
+    addToMyCartController,
+    myCartController
 }

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+</head>
+<body>
+    <%= user?.fullName %>
+    <% user.cart.forEach((product) => {%>
+        <%= product.name%>
+        <%= product.price%>
+    <% }) %>
+    </br>
+    <% const totalPrice = user.cart.reduce((sum, product) => sum + Number(product.price), 0); %>
+    <%= totalPrice %>    
+</body>
+</html>

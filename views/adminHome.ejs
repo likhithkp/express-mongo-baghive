@@ -171,11 +171,11 @@
     <main>
         <section class="products">
             <h2>Product List</h2>
-            <% if (admin.products.length===0) { %>
+            <% if (products.length===0) { %>
                 <p>No products available.</p>
                 <% } else { %>
                     <div class="product-grid">
-                        <% admin.products.forEach(function(product) { %>
+                        <% products.forEach(function(product) { %>
                             <div class="product-card">
                                 <img src="data:image/svg+xml;base64,<%= product.image.toString('base64') %>"
                                     alt="<%= product.name %>">
